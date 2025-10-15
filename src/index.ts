@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // MCP Server für Onboarding-Text-Generator
 // Install: npm install @modelcontextprotocol/sdk zod
 
@@ -11,13 +12,13 @@ const server = new McpServer({
     name: "io.github.goodfel10w/welcome-text-generator-mcp",
     title: "Welcome Text Generator",
     description: "Generiert Willkommenstexte für neue Mitarbeiter",
-    version: "1.0.1",
+    version: "1.0.2",
     packages: [
         {
             registryType: "npm",
             registryBaseUrl: "https://registry.npmjs.org ",
             identifier: "welcome-text-generator-mcp",
-            version: "1.0.1",
+            version: "1.0.2",
             transport: { type: "stdio" }
         }
     ]

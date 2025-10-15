@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca12afe0-f1ad-4a17-bbea-7597ba0cd871" name="Changes" comment="NPM publish update 1.0.1">
+    <list default="true" id="ca12afe0-f1ad-4a17-bbea-7597ba0cd871" name="Changes" comment="Run publish with 1.3.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1760460246456</updated>
       <workItem from="1760460247567" duration="1457000" />
-      <workItem from="1760507974381" duration="11419000" />
+      <workItem from="1760507974381" duration="13992000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -189,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760519282382</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Run publish with 1.3.0">
+      <option name="closed" value="true" />
+      <created>1760520967106</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760520967106</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +212,7 @@
     <MESSAGE value="NPM publish" />
     <MESSAGE value="NPM publish update" />
     <MESSAGE value="NPM publish update 1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="NPM publish update 1.0.1" />
+    <MESSAGE value="Run publish with 1.3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Run publish with 1.3.0" />
   </component>
 </project>

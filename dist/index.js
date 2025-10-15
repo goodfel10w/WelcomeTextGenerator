@@ -5,10 +5,20 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { extractFromTextTool } from "./tools/extractFromTextTool.js";
 import { listDataTool } from "./tools/listDataTool.js";
 import { generateModularTextTool } from "./tools/generateModularTextTool.js";
-// MCP Server erstellen
 const server = new McpServer({
-    name: "onboarding-text-generator",
-    version: "1.0.0",
+    name: "io.github.goodfel10w/welcome-text-generator-mcp",
+    title: "Welcome Text Generator",
+    description: "Generiert Willkommenstexte für neue Mitarbeiter",
+    version: "1.0.1",
+    packages: [
+        {
+            registryType: "npm",
+            registryBaseUrl: "https://registry.npmjs.org ",
+            identifier: "welcome-text-generator-mcp",
+            version: "1.0.1",
+            transport: { type: "stdio" }
+        }
+    ]
 });
 // Tools registrieren
 server.registerTool(extractFromTextTool.name, extractFromTextTool.config, extractFromTextTool.handler);

@@ -1,8 +1,7 @@
 // MCP Server für Onboarding-Text-Generator
-// Install: npm install @modelcontextprotocol/sdk zod pdfjs-dist
+// Install: npm install @modelcontextprotocol/sdk zod
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { extractFromPdfTool } from "./tools/extractFromPdfTool.js";
 import { extractFromTextTool } from "./tools/extractFromTextTool.js";
 import { listDataTool } from "./tools/listDataTool.js";
 import { generateModularTextTool } from "./tools/generateModularTextTool.js";
@@ -12,7 +11,6 @@ const server = new McpServer({
     version: "1.0.0",
 });
 // Tools registrieren
-server.registerTool(extractFromPdfTool.name, extractFromPdfTool.config, extractFromPdfTool.handler);
 server.registerTool(extractFromTextTool.name, extractFromTextTool.config, extractFromTextTool.handler);
 server.registerTool(listDataTool.name, listDataTool.config, listDataTool.handler);
 server.registerTool(generateModularTextTool.name, generateModularTextTool.config, generateModularTextTool.handler);

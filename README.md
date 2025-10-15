@@ -1,10 +1,9 @@
 # Welcome Text Generator MCP Server
 
-Ein Model Context Protocol (MCP) Server zur automatischen Generierung professioneller Willkommenstexte für neue Mitarbeiter. Extrahiert strukturierte Daten aus Lebensläufen (PDF oder Text) und erstellt modulare, anpassbare Onboarding-Texte.
+Ein Model Context Protocol (MCP) Server zur automatischen Generierung professioneller Willkommenstexte für neue Mitarbeiter. Extrahiert strukturierte Daten aus Freitext-Informationen und erstellt modulare, anpassbare Onboarding-Texte.
 
 ## Features
 
-✨ **PDF-Extraktion**: Liest automatisch Lebensläufe aus PDF-Dateien
 📝 **Text-Analyse**: Verarbeitet Freitext-Informationen über Mitarbeiter
 🎯 **Modulares Template-System**: 5 flexible Module mit verschiedenen Varianten
 💾 **Datenspeicherung**: Speichert extrahierte Daten zur späteren Verwendung
@@ -75,20 +74,7 @@ Starte die Claude Desktop App neu, damit der MCP Server geladen wird.
 
 ## Verfügbare Tools
 
-### 1. `extract_from_pdf`
-Extrahiert strukturierte Daten aus einem PDF-Lebenslauf.
-
-**Parameter:**
-- `filePath` (string): Absoluter Pfad zur PDF-Datei
-
-**Beispiel:**
-```json
-{
-  "filePath": "C:\\Users\\name\\Documents\\lebenslauf.pdf"
-}
-```
-
-### 2. `extract_from_text`
+### 1. `extract_from_text`
 Extrahiert strukturierte Daten aus Freitext.
 
 **Parameter:**
@@ -101,7 +87,7 @@ Extrahiert strukturierte Daten aus Freitext.
 }
 ```
 
-### 3. `generate_modular_welcome_text`
+### 2. `generate_modular_welcome_text`
 Generiert einen modularen Willkommenstext nach dem Template-System.
 
 **Parameter:**
@@ -121,7 +107,7 @@ Generiert einen modularen Willkommenstext nach dem Template-System.
   - `introductionVariant` (string, default: "variant1"): "variant1", "variant2" oder "variant3"
   - `closingVariant` (string, default: "variant1"): "variant1", "variant2" oder "variant3"
 
-### 4. `list_extracted_data`
+### 3. `list_extracted_data`
 Listet alle gespeicherten Mitarbeiterdaten auf.
 
 **Keine Parameter erforderlich**
@@ -156,11 +142,13 @@ Informationen zur bisherigen Karriere und Erfolgen.
 Im Claude Chat:
 
 ```
-Ich: Hier ist der Lebenslauf von unserem neuen Mitarbeiter.
-[PDF hochladen]
+Ich: Hier sind die Informationen über unseren neuen Mitarbeiter:
+Max Mustermann - Senior Developer mit 5 Jahren Erfahrung in JavaScript, TypeScript und React.
+Hat zuvor bei TechCorp gearbeitet und mehrere erfolgreiche Projekte geleitet.
+Begeisterter Marathonläufer.
 
-Claude: Ich extrahiere die Daten aus der PDF...
-[verwendet extract_from_pdf Tool]
+Claude: Ich extrahiere die Daten aus dem Text...
+[verwendet extract_from_text Tool]
 
 Ich: Erstelle einen Willkommenstext mit Variante 2 für die Begrüßung
 und füge einen Fun Fact hinzu.
@@ -193,7 +181,7 @@ Alle extrahierten Daten werden automatisch gespeichert in:
 Jeder Eintrag enthält:
 - `id`: Eindeutige ID (Timestamp)
 - `timestamp`: ISO 8601 Zeitstempel
-- `source`: Quelle der Daten (PDF-Pfad oder "Manuelle Texteingabe")
+- `source`: Quelle der Daten ("Manuelle Texteingabe")
 - `data`: Die extrahierten Mitarbeiterdaten
 
 ## Entwicklung
@@ -220,7 +208,6 @@ npm test
 
 - **TypeScript**: Typsicherer Code
 - **MCP SDK**: Model Context Protocol Integration
-- **pdfjs-dist**: PDF-Verarbeitung
 - **Zod**: Schema-Validierung
 
 ## Projektstruktur
@@ -231,12 +218,10 @@ welcome-text-generator-mcp/
 │   ├── index.ts                 # Server-Einstiegspunkt
 │   ├── types.ts                 # TypeScript-Typen
 │   ├── tools/                   # MCP Tools
-│   │   ├── extractFromPdfTool.ts
 │   │   ├── extractFromTextTool.ts
 │   │   ├── generateModularTextTool.ts
 │   │   └── listDataTool.ts
 │   ├── utils/                   # Hilfsfunktionen
-│   │   ├── pdfExtractor.ts
 │   │   ├── textExtractor.ts
 │   │   └── moduleTextGenerator.ts
 │   ├── templates/               # Text-Templates
@@ -268,8 +253,7 @@ Bei Fragen oder Problemen:
 
 ### Version 1.0.0
 - Initial Release
-- PDF-Extraktion
-- Text-Extraktion
+- Text-Extraktion und Analyse
 - Modulares Template-System mit 5 Modulen
 - Datenspeicherung und -verwaltung
 - 3 Varianten für Einleitung und Abschluss

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca12afe0-f1ad-4a17-bbea-7597ba0cd871" name="Changes" comment="NPM publish">
+    <list default="true" id="ca12afe0-f1ad-4a17-bbea-7597ba0cd871" name="Changes" comment="NPM publish update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.json" beforeDir="false" afterPath="$PROJECT_DIR$/server.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1760460246456</updated>
       <workItem from="1760460247567" duration="1457000" />
-      <workItem from="1760507974381" duration="8450000" />
+      <workItem from="1760507974381" duration="9609000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -156,7 +157,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760517328764</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="NPM publish update">
+      <option name="closed" value="true" />
+      <created>1760517698610</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760517698610</updated>
+    </task>
+    <task id="LOCAL-00011" summary="NPM publish update">
+      <option name="closed" value="true" />
+      <created>1760518868956</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760518868956</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +184,7 @@
     <MESSAGE value="Release Version" />
     <MESSAGE value="Smithery version" />
     <MESSAGE value="NPM publish" />
-    <option name="LAST_COMMIT_MESSAGE" value="NPM publish" />
+    <MESSAGE value="NPM publish update" />
+    <option name="LAST_COMMIT_MESSAGE" value="NPM publish update" />
   </component>
 </project>

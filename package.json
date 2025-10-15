@@ -1,6 +1,7 @@
 {
   "name": "welcome-text-generator-mcp",
   "version": "1.0.0",
+  "mcpName": "io.github.goodfel10w/welcome-text-generator-mcp",
   "description": "MCP Server für automatische Generierung professioneller Willkommenstexte für neue Mitarbeiter",
   "main": "dist/index.js",
   "module": "./src/index.ts",

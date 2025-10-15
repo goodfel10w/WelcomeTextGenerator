@@ -3,7 +3,7 @@
   "name": "io.github.goodfel10w/welcome-text-generator-mcp",
   "description": "Generiert professionelle Willkommenstexte für neue Mitarbeiter aus strukturierten Freitextdaten.",
   "repository": {
-    "url": "https://github.com/goodfel10w/WelcomeTextGenerator ",
+    "url": "https://github.com/goodfel10w/WelcomeTextGenerator",
     "source": "git"
   },
   "version": "1.0.0",

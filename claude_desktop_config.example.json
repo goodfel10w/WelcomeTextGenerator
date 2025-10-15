@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "welcome-text-generator": {
+      "command": "node",
+      "args": [
+        "C:\\path\\to\\welcome-text-generator-mcp\\dist\\index.js"
+      ],
+      "env": {}
+    }
+  }
+}

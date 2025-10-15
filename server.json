@@ -7,7 +7,7 @@
     "url": "https://github.com/goodfel10w/WelcomeTextGenerator ",
     "source": "git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packages": [
     {
       "identifier": "welcome-text-generator-mcp",

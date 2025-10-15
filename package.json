@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "MCP Server für automatische Generierung professioneller Willkommenstexte für neue Mitarbeiter",
   "main": "dist/index.js",
+  "module": "./src/index.ts",
   "type": "module",
   "bin": {
     "welcome-text-generator-mcp": "dist/index.js"

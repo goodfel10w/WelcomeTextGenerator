@@ -4,7 +4,7 @@
   "title": "Welcome Text Generator",
   "description": "Generiert professionelle Willkommenstexte für neue Mitarbeiter aus strukturierten Freitextdaten.",
   "repository": {
-    "url": "https://github.com/goodfel10w/WelcomeTextGenerator",
+    "url": "https://github.com/goodfel10w/WelcomeTextGenerator ",
     "source": "git"
   },
   "version": "1.0.0",
@@ -14,7 +14,8 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org ",
       "transport": { "type": "stdio" },
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "environmentVariables": []
     }
   ]
 }

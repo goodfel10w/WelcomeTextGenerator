@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.goodfel10w/welcome-text-generator-mcp",
+  "description": "MCP Server für automatische Generierung professioneller Willkommenstexte für neue Mitarbeiter",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/goodfel10w/WelcomeTextGenerator",
+    "source": "github"
+  },
+  "version": "1.0.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "welcome-text-generator-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

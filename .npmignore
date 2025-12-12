@@ -1,0 +1,34 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Development files
+.git/
+.gitignore
+.DS_Store
+tsconfig.json
+.vscode/
+.idea/
+
+# Build artifacts
+node_modules/
+*.log
+*.tgz
+
+# Test files
+test/
+tests/
+*.test.ts
+*.spec.ts
+
+# Documentation (keep README.md)
+docs/
+
+# Data directory
+data/
+
+# Configuration files
+.editorconfig
+.prettierrc
+.eslintrc

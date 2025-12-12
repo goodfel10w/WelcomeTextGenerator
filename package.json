@@ -1,0 +1,58 @@
+{
+  "name": "welcome-text-generator-mcp",
+  "version": "1.0.2",
+  "mcpName": "io.github.goodfel10w/welcome-text-generator-mcp",
+  "description": "MCP Server für automatische Generierung professioneller Willkommenstexte für neue Mitarbeiter",
+  "main": "dist/index.js",
+  "module": "./src/index.ts",
+  "type": "module",
+  "bin": {
+    "welcome-text-generator-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "onboarding",
+    "welcome-text",
+    "hr",
+    "employee-onboarding",
+    "text-generation",
+    "claude",
+    "ai"
+  ],
+  "author": "Denis Lischer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodfel10w/WelcomeTextGenerator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/goodfel10w/WelcomeTextGenerator/issues"
+  },
+  "homepage": "https://github.com/goodfel10w/WelcomeTextGenerator#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

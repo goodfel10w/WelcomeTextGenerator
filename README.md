@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/goodfel10w-welcometextgenerator-badge.png)](https://mseep.ai/app/goodfel10w-welcometextgenerator)
+
 # Welcome Text Generator MCP Server
 
 Ein Model Context Protocol (MCP) Server zur automatischen Generierung professioneller Willkommenstexte für neue Mitarbeiter. Extrahiert strukturierte Daten aus Freitext-Informationen und erstellt modulare, anpassbare Onboarding-Texte.
